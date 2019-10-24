@@ -16,7 +16,9 @@ The programs are split up between WordCountBasic and WordCountMapReduce.
 
   Output is in collectedResults  
   Execution time is in each .png file. Three files to account for cluster variability.  
-  This ran much slower than the basic wordcount, it needs a larger data set.  
+
+  The basic implementation was much faster than the map reduce implementation. In order for the map reduce implementation to be faster, we need a much larger data set.  
+
   To run this:  
     - Make a jar of the WordCount.java program  
     - Copy this jar and the example text files to the cluster  
@@ -24,3 +26,4 @@ The programs are split up between WordCountBasic and WordCountMapReduce.
     - Run:  
     `hadoop jar WordCount.jar main.WordCount testData output`  
     This is in a package, so you need main.WordCount, not just WordCount
+  
